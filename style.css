@@ -1,201 +1,145 @@
-/* Reset styles */
-* {
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* General Style */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2c3e50; /* Blackish gray background */
+  color: white;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
+h1, h2, h3, h4 {
+  color: #ecf0f1; /* Lighter text for headers */
+  font-weight: 600;
 }
 
-/* Navigation Bar */
+/* Header Section */
 header {
-  background-color: #007BFF;
-  padding: 20px;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo h1 {
+  background: linear-gradient(to right, #2c3e50, #34495e); /* Gradient background */
   color: white;
-}
-
-header .nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1.1rem;
-}
-
-header .nav-links a:hover {
-  background-color: #0056b3;
-  border-radius: 5px;
-}
-
-header .btn-main {
-  background-color: #FF6347;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-header .btn-main:hover {
-  background-color: #ff4500;
-}
-
-/* Hero Section */
-#hero {
-  background: linear-gradient(135deg, #1E90FF, #00BFFF);
-  color: white;
-  padding: 80px 20px;
+  padding: 50px 0;
   text-align: center;
 }
 
-#hero .hero-content h1 {
+header h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 
-#hero .btn-main {
-  background-color: #FF4500;
-  padding: 15px 30px;
-  border-radius: 5px;
+header h2 {
   font-size: 1.2rem;
-  transition: transform 0.3s ease;
+  margin-top: 10px;
 }
 
-#hero .btn-main:hover {
-  background-color: #FF6347;
-  transform: scale(1.05);
+header .cta-btn {
+  background: linear-gradient(to right, #1abc9c, #16a085); /* Aqua Blue gradient button */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s, transform 0.2s;
 }
 
-/* Features Section */
-.features-section {
+header .cta-btn:hover {
+  background: linear-gradient(to right, #16a085, #1abc9c);
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Key Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.features div {
+  background-color: #34495e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 50px 20px;
+  width: 22%;
 }
 
-.features-section h2 {
-  font-size: 2.5rem;
+.features h3 {
   margin-bottom: 20px;
 }
 
-.feature-cards {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+.features p {
+  margin-bottom: 20px;
 }
 
-.feature-card {
-  background-color: #f1f1f1;
-  padding: 30px;
-  border-radius: 10px;
-  width: 30%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.features a {
+  color: #1abc9c; /* Aqua Blue */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.features a:hover {
+  color: #16a085;
+}
+
+/* Our Courses Section */
+.courses {
+  background-color: #34495e;
+  padding: 50px 0;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.feature-card p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.feature-card .btn-main {
-  margin-top: 20px;
-}
-
-/* Courses Section */
-.courses-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-}
-
-.courses-section h2 {
-  text-align: center;
+.courses h2 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.courses-list {
-  display: flex;
-  justify-content: space-around;
 }
 
 .course-item {
-  background-color: #fff;
-  padding: 30px;
-  width: 30%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.course-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.course-item p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-/* Contact Section */
-.contact-section {
-  background-color: #007BFF;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.contact-section input, .contact-section textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.contact-section button {
-  padding: 12px 25px;
-  background-color: #FF6347;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  color: white;
-  border: none;
-}
-
-.contact-section button:hover {
-  background-color: #FF4500;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
+  background: linear-gradient(to right, #2c3e50, #34495e); /* Gradient background for course item */
   padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 45%;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-item a {
+  color: #1abc9c; /* Aqua Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #1abc9c; /* Aqua Blue */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #16a085;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .course-item {
+    width: 80%;
+  }
 }
