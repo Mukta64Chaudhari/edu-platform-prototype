@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduPlatform - Empowering Rural Communities</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>EduPlatform</h1>
-      </div>
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#courses">Courses</a>
-        <a href="#contact">Contact</a>
-        <a href="#get-started" class="btn-main">Get Started</a>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="hero-content">
-      <h1>Welcome to EduPlatform</h1>
-      <p>Empowering Rural Communities with Skill Development</p>
-      <a href="#get-started" class="btn-main">Get Started</a>
-    </div>
-  </section>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>EduPlatform</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login" class="cta-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Features Section -->
-  <section id="features" class="features-section">
-    <h2>Key Features</h2>
-    <div class="feature-cards">
-      <div class="feature-card">
-        <h3>Personalized Roadmaps</h3>
-        <p>Tailored learning paths based on individual needs.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Expert Sessions</h3>
-        <p>Live industry expert guidance to enhance skills.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Job Placement</h3>
-        <p>Assistance in securing job placements in rural areas.</p>
-      </div>
-    </div>
-    <a href="#contact" class="btn-main">Learn More</a>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EduPlatform</h1>
+            <p>Empowering Rural Communities with Skill Development</p>
+            <a href="#courses" class="cta-btn">Get Started</a>
+        </div>
+    </section>
 
-  <!-- Courses Section -->
-  <section id="courses" class="courses-section">
-    <h2>Our Courses</h2>
-    <div class="courses-list">
-      <div class="course-item">
-        <h3>Web Development</h3>
-        <p>Learn the skills to build modern websites.</p>
-      </div>
-      <div class="course-item">
-        <h3>Data Science</h3>
-        <p>Explore data analytics and machine learning.</p>
-      </div>
-      <div class="course-item">
-        <h3>AI & ML</h3>
-        <p>Learn the fundamentals of Artificial Intelligence.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Key Features Section -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-items">
+            <div>
+                <h3>Personalized Learning Roadmaps</h3>
+                <p>Custom learning paths based on student needs and career goals.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h3>Industry Expert Sessions</h3>
+                <p>Engage with top industry professionals to gain real-world insights.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h3>Interactive Learning Material</h3>
+                <p>Access dynamic resources, including videos, quizzes, and more.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h3>Job Placement Assistance</h3>
+                <p>Get job placements and internships with leading companies.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="email" placeholder="Your email" required>
-      <textarea placeholder="Your message" required></textarea>
-      <button type="submit" class="btn-main">Submit</button>
-    </form>
-  </section>
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-item">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and more!</p>
+            <a href="#">Join Now</a>
+        </div>
+        <div class="course-item">
+            <h3>Digital Marketing</h3>
+            <p>Master marketing in the digital age.</p>
+            <a href="#">Join Now</a>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Powered by EduPlatform | Contact Us: support@eduplatform.com</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <p>Email: support@eduplatform.com</p>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>Powered by EduPlatform | <a href="#contact">Contact Us</a></p>
+    </footer>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
