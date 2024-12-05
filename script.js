@@ -1,26 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Scroll to a section when clicking on navigation links
-  const links = document.querySelectorAll('a[href^="#"]');
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      window.scrollTo({
-        top: targetElement.offsetTop - 50,
-        behavior: 'smooth'
-      });
-    });
-  });
-
-  // Example for button interaction (change color on hover)
-  const ctaButton = document.querySelector('.cta-btn');
-  if (ctaButton) {
-    ctaButton.addEventListener('mouseover', function() {
-      ctaButton.style.backgroundColor = '#16a085';
-    });
-    ctaButton.addEventListener('mouseout', function() {
-      ctaButton.style.backgroundColor = '#1abc9c';
-    });
-  }
+// Button to continue from where the user left off
+document.getElementById('continueBtn').addEventListener('click', function() {
+    // Placeholder for AI-generated URL or video path
+    let videoURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Change with actual video URL
+    showVideoPage(videoURL);
 });
+
+// Function to show the video page with embedded YouTube video
+function showVideoPage(videoURL) {
+    document.getElementById('roadmap').style.display = 'none';
+    document.getElementById('sessions').style.display = 'none';
+    document.getElementById('courses').style.display = 'none';
+    document.getElementById('videoPage').style.display = 'block';
+    document.getElementById('videoFrame').src = videoURL;
+}
+
+// For 3D Roadmap, you can use libraries like Three.js for creating animations
+function create3DRoadmap() {
+    // Placeholder code for creating 3D animations
+    let container = document.getElementById('roadmap-animation');
+    container.innerHTML = "<p>3D Roadmap Animation Will Go Here</p>";
+}
+create3DRoadmap();
