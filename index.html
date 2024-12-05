@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Platform Prototype</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edu Platform Prototype</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to EduPlatform</h1>
-        <p>Empowering Rural Communities with Skill Development</p>
-        <button class="cta-button">Get Started</button>
-    </header>
-    
-    <section id="features">
-        <h2>Key Features</h2>
-        <ul>
-            <li>Personalized Learning Roadmaps</li>
-            <li>Industry Expert Sessions</li>
-            <li>Interactive Learning Material</li>
-            <li>Job Placement Assistance</li>
-        </ul>
-        <button class="cta-button">Learn More</button>
-    </section>
-    
-    <footer>
-        <p>Powered by EduPlatform | Contact Us: support@eduplatform.com</p>
-        <button class="cta-button">Contact Us</button>
-    </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to Edu Platform</h1>
+      <p>Your path to success with guided courses and expert mentorship.</p>
+      <a href="#courses" class="cta-button">Explore Courses</a>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn to build websites and applications from scratch.</p>
+        <button>Start Now</button>
+      </div>
+      <div class="course-card">
+        <h3>Machine Learning</h3>
+        <p>Unlock the world of artificial intelligence and data science.</p>
+        <button>Start Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact us at info@eduplatform.com</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
