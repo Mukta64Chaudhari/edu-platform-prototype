@@ -3,57 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edu Platform</title>
+    <title>Interactive Roadmap</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <h1>Welcome to Your Personalized Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#sessions">Guest Sessions</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Roadmap Section (AI-Generated) -->
-    <section id="roadmap">
-        <h2>Your Learning Roadmap</h2>
-        <div id="roadmap-animation">
-            <!-- 3D roadmap animations will go here -->
+    <section id="home">
+        <h1>Welcome to the Roadmap</h1>
+        <p>Start your journey by clicking the roadmap below:</p>
+        <div class="roadmap">
+            <img src="roadmap_placeholder.jpg" alt="Roadmap" id="roadmap-img">
+            <!-- Roadmap with milestones -->
+            <div class="milestone" onclick="openCourse('Course 1')">Course 1</div>
+            <div class="milestone" onclick="openCourse('Course 2')">Course 2</div>
+            <div class="milestone" onclick="openCourse('Course 3')">Course 3</div>
         </div>
-        <button id="continueBtn">Continue from where you left</button>
     </section>
 
-    <!-- Video Page Redirect -->
-    <section id="videoPage" style="display: none;">
-        <h3>Video Tutorial</h3>
-        <iframe id="videoFrame" width="800" height="450"></iframe>
-    </section>
-
-    <!-- Guest Sessions -->
-    <section id="sessions">
-        <h3>Guest Sessions</h3>
+    <section id="courses">
+        <h2>Your Enrolled Courses</h2>
+        <!-- Example of a course list -->
         <ul>
-            <li><strong>Dr. John Doe</strong> - Data Scientist | 12th Dec, 10 AM</li>
-            <li><strong>Jane Smith</strong> - UX Designer | 14th Dec, 2 PM</li>
+            <li>Course 1 - <progress value="50" max="100"></progress></li>
+            <li>Course 2 - <progress value="20" max="100"></progress></li>
+            <li>Course 3 - <progress value="70" max="100"></progress></li>
         </ul>
     </section>
 
-    <!-- Enrolled Courses and Progress -->
-    <section id="courses">
-        <h3>Your Enrolled Courses</h3>
-        <div>
-            <h4>Web Development</h4>
-            <p>Progress: <span id="webDevProgress">45%</span></p>
-            <div class="progress-bar">
-                <div style="width: 45%;"></div>
-            </div>
-        </div>
-        <div>
-            <h4>Digital Marketing</h4>
-            <p>Progress: <span id="digitalMarketingProgress">30%</span></p>
-            <div class="progress-bar">
-                <div style="width: 30%;"></div>
-            </div>
-        </div>
+    <section id="sessions">
+        <h2>Upcoming Guest Sessions</h2>
+        <ul>
+            <li>Speaker 1 - Web Development - 10th Dec 2024, 5 PM</li>
+            <li>Speaker 2 - Machine Learning - 15th Dec 2024, 6 PM</li>
+        </ul>
     </section>
+
+    <footer>
+        <p>&copy; 2024 EduPlatform</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
