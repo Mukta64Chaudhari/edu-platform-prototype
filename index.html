@@ -3,72 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduPlatform</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>EduPlatform - Empowering Rural Communities</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero-section">
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>EduPlatform</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+        <a href="#get-started" class="btn-main">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
     <div class="hero-content">
       <h1>Welcome to EduPlatform</h1>
       <p>Empowering Rural Communities with Skill Development</p>
-      <a href="#features" class="btn-main">Get Started</a>
+      <a href="#get-started" class="btn-main">Get Started</a>
     </div>
-  </header>
+  </section>
 
-  <section id="features" class="features">
+  <!-- Features Section -->
+  <section id="features" class="features-section">
     <h2>Key Features</h2>
     <div class="feature-cards">
       <div class="feature-card">
-        <h3>Personalized Learning Roadmaps</h3>
-        <p>Customized learning paths for students based on skill level and career goals.</p>
+        <h3>Personalized Roadmaps</h3>
+        <p>Tailored learning paths based on individual needs.</p>
       </div>
       <div class="feature-card">
-        <h3>Industry Expert Sessions</h3>
-        <p>Engage with top industry professionals to gain real-world insights.</p>
+        <h3>Expert Sessions</h3>
+        <p>Live industry expert guidance to enhance skills.</p>
       </div>
       <div class="feature-card">
-        <h3>Interactive Learning Material</h3>
-        <p>Access to engaging and dynamic learning resources, including videos and quizzes.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Job Placement Assistance</h3>
-        <p>Get access to job placements and internships with leading companies.</p>
+        <h3>Job Placement</h3>
+        <p>Assistance in securing job placements in rural areas.</p>
       </div>
     </div>
-    <a href="#contact" class="btn-secondary">Learn More</a>
+    <a href="#contact" class="btn-main">Learn More</a>
   </section>
 
-  <section id="courses" class="courses">
+  <!-- Courses Section -->
+  <section id="courses" class="courses-section">
     <h2>Our Courses</h2>
-    <div class="course-list">
+    <div class="courses-list">
       <div class="course-item">
         <h3>Web Development</h3>
-        <p>Learn the basics of HTML, CSS, JavaScript, and more!</p>
-        <a href="#">Join Now</a>
+        <p>Learn the skills to build modern websites.</p>
       </div>
       <div class="course-item">
-        <h3>Digital Marketing</h3>
-        <p>Master the art of marketing in the digital age.</p>
-        <a href="#">Join Now</a>
+        <h3>Data Science</h3>
+        <p>Explore data analytics and machine learning.</p>
       </div>
-      <!-- Add more courses as needed -->
+      <div class="course-item">
+        <h3>AI & ML</h3>
+        <p>Learn the fundamentals of Artificial Intelligence.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
     <h2>Contact Us</h2>
-    <form action="mailto:support@eduplatform.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <form>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit" class="btn-main">Submit</button>
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>Powered by EduPlatform | <a href="mailto:support@eduplatform.com">Contact Us</a></p>
+    <p>Powered by EduPlatform | Contact Us: support@eduplatform.com</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
