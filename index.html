@@ -3,53 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Roadmap</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EduPlatform Prototype</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#sessions">Guest Sessions</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#roadmap-section">Roadmap</a></li>
+            <li><a href="#courses-section">Courses</a></li>
+            <li><a href="#guest-session-section">Guest Sessions</a></li>
+        </ul>
+    </nav>
 
-    <section id="home">
-        <h1>Welcome to the Roadmap</h1>
-        <p>Start your journey by clicking the roadmap below:</p>
-        <div class="roadmap">
-            <img src="roadmap_placeholder.jpg" alt="Roadmap" id="roadmap-img">
-            <!-- Roadmap with milestones -->
-            <div class="milestone" onclick="openCourse('Course 1')">Course 1</div>
-            <div class="milestone" onclick="openCourse('Course 2')">Course 2</div>
-            <div class="milestone" onclick="openCourse('Course 3')">Course 3</div>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to EduPlatform</h1>
+        <p>Your personalized learning journey starts here!</p>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap-section">
+        <h2>Interactive AI-Powered Roadmap</h2>
+        <p>Click on any point to continue from where you left off!</p>
+        <div class="roadmap-container">
+            <div class="roadmap">
+                <div class="roadmap-path">
+                    <div class="roadmap-point" id="point1" onclick="loadVideo('Course 1')">Course 1</div>
+                    <div class="roadmap-point" id="point2" onclick="loadVideo('Course 2')">Course 2</div>
+                    <div class="roadmap-point" id="point3" onclick="loadVideo('Course 3')">Course 3</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="courses">
+    <!-- Courses Section -->
+    <section id="courses-section">
         <h2>Your Enrolled Courses</h2>
-        <!-- Example of a course list -->
-        <ul>
-            <li>Course 1 - <progress value="50" max="100"></progress></li>
-            <li>Course 2 - <progress value="20" max="100"></progress></li>
-            <li>Course 3 - <progress value="70" max="100"></progress></li>
-        </ul>
+        <p>Here are your ongoing courses:</p>
+        <div class="courses-list">
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Progress: 50%</p>
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Progress: 30%</p>
+            </div>
+        </div>
     </section>
 
-    <section id="sessions">
-        <h2>Upcoming Guest Sessions</h2>
-        <ul>
-            <li>Speaker 1 - Web Development - 10th Dec 2024, 5 PM</li>
-            <li>Speaker 2 - Machine Learning - 15th Dec 2024, 6 PM</li>
-        </ul>
+    <!-- Guest Sessions Section -->
+    <section id="guest-session-section">
+        <h2>Guest Sessions Schedule</h2>
+        <p>Join guest sessions with industry experts:</p>
+        <div class="schedule">
+            <div class="session">
+                <h4>John Doe</h4>
+                <p>AI Expert</p>
+                <p>Date: 12th Dec, 2024 | Time: 5 PM</p>
+            </div>
+            <div class="session">
+                <h4>Jane Smith</h4>
+                <p>Web Developer</p>
+                <p>Date: 15th Dec, 2024 | Time: 6 PM</p>
+            </div>
+        </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 EduPlatform</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
