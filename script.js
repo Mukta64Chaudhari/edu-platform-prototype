@@ -1,8 +1,7 @@
-// Smooth Scroll for Anchor Links
+// Adding smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
     });
