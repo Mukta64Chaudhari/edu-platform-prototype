@@ -1,10 +1,10 @@
-// Smooth Scroll for "Get Started" and "Learn More" buttons
-document.querySelector('.btn-main').addEventListener('click', function(event) {
-  event.preventDefault();
-  document.querySelector('#features').scrollIntoView({ behavior: 'smooth' });
-});
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-document.querySelector('.btn-secondary').addEventListener('click', function(event) {
-  event.preventDefault();
-  document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
