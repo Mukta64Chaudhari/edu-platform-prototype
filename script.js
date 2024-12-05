@@ -1,4 +1,9 @@
-// Add functionality for buttons if needed
-document.querySelector('.cta-button').addEventListener('click', function() {
-    alert('You clicked the button!');
+// Smooth scroll for navigation links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
