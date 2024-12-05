@@ -3,54 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edu Platform Prototype</title>
+  <title>EduPlatform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Login</a></li>
-      </ul>
-    </nav>
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to EduPlatform</h1>
+      <p>Empowering Rural Communities with Skill Development</p>
+      <a href="#features" class="btn-main">Get Started</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home">
-    <div class="hero">
-      <h1>Welcome to Edu Platform</h1>
-      <p>Your path to success with guided courses and expert mentorship.</p>
-      <a href="#courses" class="cta-button">Explore Courses</a>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
-  <section id="courses">
-    <h2>Our Courses</h2>
-    <div class="courses">
-      <div class="course-card">
-        <h3>Web Development</h3>
-        <p>Learn to build websites and applications from scratch.</p>
-        <button>Start Now</button>
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3>Personalized Learning Roadmaps</h3>
+        <p>Customized learning paths for students.</p>
       </div>
-      <div class="course-card">
-        <h3>Machine Learning</h3>
-        <p>Unlock the world of artificial intelligence and data science.</p>
-        <button>Start Now</button>
+      <div class="feature-card">
+        <h3>Industry Expert Sessions</h3>
+        <p>Learn from top industry professionals.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Interactive Learning Material</h3>
+        <p>Engaging videos and quizzes for effective learning.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Job Placement Assistance</h3>
+        <p>Helping you land your dream job.</p>
       </div>
     </div>
+    <a href="#contact" class="btn-secondary">Learn More</a>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>Contact us at info@eduplatform.com</p>
+    <p>Powered by EduPlatform | <a href="mailto:support@eduplatform.com">Contact Us</a></p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
