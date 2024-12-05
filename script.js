@@ -1,4 +1,5 @@
-function openCourse(courseName) {
-    alert('Opening ' + courseName);
-    // Here, you can implement redirection to a new page or show a YouTube video for the course
+// Load YouTube Video when a point is clicked
+function loadVideo(course) {
+    alert("You have selected " + course + ". You will be redirected to the YouTube video for that topic.");
+    window.location.href = "https://www.youtube.com/results?search_query=" + course;
 }
