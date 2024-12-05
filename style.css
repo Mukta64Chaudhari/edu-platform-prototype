@@ -1,4 +1,4 @@
-/* Reset default styling */
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ body {
   background-color: #FF6347;
 }
 
+/* Features Section */
 .features {
   background-color: white;
   padding: 50px 20px;
@@ -105,33 +106,167 @@ body {
   background-color: #45a049;
 }
 
-footer {
-  background-color: #333;
-  color: white;
+/* Course Section */
+.courses {
+  padding: 50px 20px;
   text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
-footer a {
-  color: #FF4500;
+.courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 22%;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.course-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.course-item a {
+  background-color: #1E90FF;
+  color: white;
+  padding: 10px 20px;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.course-item a:hover {
+  background-color: #4682B4;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Contact Form */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
 }
+
+.contact form input, .contact form textarea {
+  width: 80%;
+  padding: 10pxTo make the website look and feel closer to your actual project, here's a revised version of the structure, integrating key pages and features with appropriate animations, transitions, and interactive elements.
+
+### Updated Structure for Your Website:
+1. **Home Page (Hero Section)**:
+   - **Mission Statement**: Welcoming message about skill development in rural areas.
+   - **Get Started Button**: Links to the signup or features section.
+
+2. **Courses Page**:
+   - **Course Catalog**: Show the list of available courses like Web Development, Digital Marketing, etc.
+   - **Course Join Buttons**: Users can directly join courses.
+
+3. **Personalized Roadmaps Page**:
+   - Personalized learning path suggestions based on student goals and current skill levels.
+
+4. **Industry Expert Sessions Page**:
+   - Upcoming live sessions and recorded videos from industry professionals.
+
+5. **Job Placement Assistance Page**:
+   - Job listings, internship opportunities, and placement support.
+
+6. **Contact Us Page**:
+   - A form where students can inquire about courses, resources, or help.
+
+### Features & Animations:
+- **Hover Effects**: Interactive hover effects on buttons and course cards to improve user engagement.
+- **Smooth Scroll**: Smooth scrolling between sections for a seamless user experience.
+- **3D Transitions**: For buttons and feature cards to add a premium look.
+
+### Full HTML and CSS Code with Features and Animations:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPlatform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to EduPlatform</h1>
+      <p>Empowering Rural Communities with Skill Development</p>
+      <a href="#features" class="btn-main">Get Started</a>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3>Personalized Learning Roadmaps</h3>
+        <p>Customized learning paths for students based on skill level and career goals.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Industry Expert Sessions</h3>
+        <p>Engage with top industry professionals to gain real-world insights.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Interactive Learning Material</h3>
+        <p>Access to engaging and dynamic learning resources, including videos and quizzes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Job Placement Assistance</h3>
+        <p>Get access to job placements and internships with leading companies.</p>
+      </div>
+    </div>
+    <a href="#contact" class="btn-secondary">Learn More</a>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+      <div class="course-item">
+        <h3>Web Development</h3>
+        <p>Learn the basics of HTML, CSS, JavaScript, and more!</p>
+        <a href="#">Join Now</a>
+      </div>
+      <div class="course-item">
+        <h3>Digital Marketing</h3>
+        <p>Master the art of marketing in the digital age.</p>
+        <a href="#">Join Now</a>
+      </div>
+      <!-- Add more courses as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:support@eduplatform.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Powered by EduPlatform | <a href="mailto:support@eduplatform.com">Contact Us</a></p>
+  </footer>
+</body>
+</html>
